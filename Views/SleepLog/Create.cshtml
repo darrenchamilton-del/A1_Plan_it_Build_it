@@ -1,1 +1,76 @@
+@model SleepTracker.Models.SleepAndHabitLog
 
+<h1>Sleep Tracker</h1>
+
+<form asp-action="Create" method="post">
+
+    <h2>Sleep Log</h2>
+
+    <div>
+        <label>Bedtime</label>
+        <input asp-for="Bedtime" type="datetime-local" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Wake Time</label>
+        <input asp-for="Waketime" type="datetime-local" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Hours Slept</label>
+        <input asp-for="HoursSlept" type="number" step="0.1" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Sleep Quality (1-10)</label>
+        <input asp-for="SleepQuality" type="number" min="1" max="10" />
+    </div>
+
+    <br />
+
+    <h2>Habits</h2>
+
+    <div>
+        <label>Last Caffeine</label>
+        <input asp-for="LastCaffeine" type="datetime-local" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Last Time You Ate</label>
+        <input asp-for="LastAte" type="datetime-local" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Last Time You Exercised</label>
+        <input asp-for="LastExercised" type="datetime-local" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Wake Up Time</label>
+        <input asp-for="WakeUpTime" type="datetime-local" />
+    </div>
+
+    <br />
+
+    <div>
+        <label>Medication Time</label>
+        <input asp-for="MedicationTime" type="datetime-local" />
+    </div>
+
+    <br />
+
+    <button type="submit">Save Sleep and Habits</button>
+
+</form>
