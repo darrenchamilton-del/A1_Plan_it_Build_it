@@ -12,7 +12,7 @@ namespace SleepTracker.Controllers
             return View(records);
         }
 
-        public IActionResult Create()
+        public IActionResult Accept()
         {
             return View();
         }

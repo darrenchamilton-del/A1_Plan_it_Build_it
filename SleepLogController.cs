@@ -3,7 +3,7 @@ using SleepTracker.Models;
 
 namespace SleepTracker.Controllers
 {
-    public class SleepLogController : Controller
+    public class SleepLogControllerbak : Controller
     {
         private static List<SleepAndHabitLog> records = new List<SleepAndHabitLog>();
 
