@@ -7,5 +7,7 @@
 
         public bool isAlarmOn { get; set; }
 
+        public DateTime? secondAlarmSet { get; set; }
+
     }
 }
