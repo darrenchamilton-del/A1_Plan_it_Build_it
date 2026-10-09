@@ -152,7 +152,19 @@ Implementation
 For the implementation phase we will code the user interface for the customer to enter their sleep and behavior details, the logic around determining what they need to improve, as well as a database for holding their data. We will also code a settable alarm that they can use to wake themselves.
 Testing:
 We will be testing the app's security features to ensure the safety of users' personal information. The app's features will also be tested to make sure that they work correctly and that all calculations done by the app are correct and the recommendations given by the app are helpful.
+
 Deployment:
 The finished app will be released for users to download but the user will need to pay a fee or monthly subscription to use it.
 Maintenance:  
 We will provide regular updates which would ensure that everyone’s app works with future updates, fix bugs, and provide new QOL features for user preferences that may change over time. Because we are working with potential sensitive information, we need to provide regular security upgrades as well. We will use a crash log and user feedback to assist us.
+
+SRS Cards:
+
+Requirement ID:          FR-01
+Requirement Name:        Record Sleep log
+User/Actor:              User
+Requirement Statement:   The system allows the user to enter their bedtime, waketime, total hours sleeped, and sleep quality rated from 1-10
+Priority:                Must Have
+Acceptance Criteria:     When the user enters valid bedtime, waketime, and sleep quality information and they save the sleep log the system will then store the information and display the                           saved sleep record.
+Related SDLC Stages:     Requirements Analysis, later verified through testing
+
