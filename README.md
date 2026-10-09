@@ -148,13 +148,14 @@ We would use a questionnaire to interview prospective customers about what some 
 Design:
 Create a conceptual UI for the app. Write the pseudocode for the sleep logic and based on the app needs and the logic we have written, choose the appropriate language to code the app in.
 
-Implementation
+Implementation:
 For the implementation phase we will code the user interface for the customer to enter their sleep and behavior details, the logic around determining what they need to improve, as well as a database for holding their data. We will also code a settable alarm that they can use to wake themselves.
 Testing:
 We will be testing the app's security features to ensure the safety of users' personal information. The app's features will also be tested to make sure that they work correctly and that all calculations done by the app are correct and the recommendations given by the app are helpful.
 
 Deployment:
 The finished app will be released for users to download but the user will need to pay a fee or monthly subscription to use it.
+
 Maintenance:  
 We will provide regular updates which would ensure that everyone’s app works with future updates, fix bugs, and provide new QOL features for user preferences that may change over time. Because we are working with potential sensitive information, we need to provide regular security upgrades as well. We will use a crash log and user feedback to assist us.
 
@@ -162,9 +163,41 @@ SRS Cards:
 
 Requirement ID:          FR-01
 Requirement Name:        Record Sleep log
-User/Actor:              User
+User/Actor:              Customer, sleep information input by customer
 Requirement Statement:   The system allows the user to enter their bedtime, waketime, total hours sleeped, and sleep quality rated from 1-10
 Priority:                Must Have
 Acceptance Criteria:     When the user enters valid bedtime, waketime, and sleep quality information and they save the sleep log the system will then store the information and display the                           saved sleep record.
 Related SDLC Stages:     Requirements Analysis, later verified through testing
+
+Requirement ID:          FR-02
+Requirement Name:        Record Habits log
+User/Actor:              Customer, Habit information input by the customer
+Requirement Statement:   The system allows the users to record habits that affect their sleep quality, like the last time they ate, exercised, had caffeine, woke up, and took medication.
+Priority:                High
+Acceptance Criteria:     If valid habit information is input correctly and the user saves the habit log then the system shall save and display the data input by the user.
+Related SDLC Stages:     Requirements Analysis, later verified through testing
+
+Requirement ID:          FR-03
+Requirement Name:        Alarm
+User/Actor:              Customer sets alarm, triggered by internal clock
+Requirement Statement:   The system must allow the user to set a simple alarm each day to ensure they get only the desired amount of sleep. 
+Priority:                Critical
+Acceptance Criteria:     The Alarm must go off only when directed, and can be set for any time or date in the future, and preset alarm can be deleted or edited if the user desires
+Related SDLC Stages:     Requirements Analysis, Design, Implementation, Testing
+
+Requirement ID:          FR-04
+Requirement Name:        Sleep Calculator
+User/Actor:              Customer, Sleep Calculation Function
+Requirement Statement:   The system must calculate the hours slept per day 
+Priority:                Critical
+Acceptance Criteria:     The system must show the data to the user, and provide helpful tips. Specifically it should warn them about taking caffeine or eating too much too close to bed                             time if they make a habit of it. It must divide time slept by total days logged, and recommend if the user should be sleeping more or less, based on the                                    recommended sleep for an adult.
+Related SDLC Stages:     Requirements Analysis, Design, Implementation, Testing, 
+
+
+
+
+
+
+
+
 
